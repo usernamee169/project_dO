@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTGPriceCompass - Поиск карт MTG</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>MTGPriceCompass</h1>
+            <p class="subtitle">Поиск самых выгодных предложений MTG в России</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="search-section">
+            <h2>Введите список карт</h2>
+            <p class="hint">Каждую карту с новой строки (запятые внутри названия не разделяют)</p>
+            <textarea id="cardList" rows="8" placeholder="Пример:
+Ragavan, Nimble Pilferer
+Elspeth, Storm Slayer
+Solitude
+Sol Ring
+Otawara, Soaring City"></textarea>
+            <button id="searchBtn" class="btn-primary">Поиск</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Email: support@mtgpricecompass.ru | Telegram: @mtgpricecompass</p>
+            <p>2024 MTGPriceCompass - агрегатор цен на Magic: The Gathering</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

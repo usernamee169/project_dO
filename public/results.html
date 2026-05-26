@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTGPriceCompass - Результаты поиска</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>MTGPriceCompass</h1>
+            <a href="/" class="back-link">← Новый поиск</a>
+        </div>
+    </header>
+
+    <main class="container results-layout">
+        <div class="main-content">
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>Найдено карт</h3>
+                    <p><span id="foundCount">0</span> из <span id="totalCards">0</span></p>
+                </div>
+                <div class="stat-card">
+                    <h3>Не найдено</h3>
+                    <p id="notFoundList">—</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Итоговая сумма (мин.)</h3>
+                    <p id="totalSum">0 ₽</p>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table id="pricesTable">
+                    <thead>
+                        <tr id="tableHeader">
+                            <th>Название карты</th>
+                            <th>Мин</th>
+                        <tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr><td colspan="2">Загрузка...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="cart-sidebar">
+            <h3>Корзина покупок</h3>
+            <div class="cart-stats">
+                <p>Выбрано: <span id="cartCount">0</span> из <span id="totalCartCards">0</span></p>
+                <p>Сумма: <span id="cartTotal">0</span> ₽</p>
+            </div>
+            <div id="cartItems" class="cart-items">
+                <p class="empty-cart">Корзина пуста</p>
+            </div>
+            <button id="clearCartBtn" class="btn-secondary">Очистить корзину</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Email: support@mtgpricecompass.ru | Telegram: @mtgpricecompass</p>
+            <p>2024 MTGPriceCompass - агрегатор цен на Magic: The Gathering</p>
+        </div>
+    </footer>
+
+    <script src="/js/results.js"></script>
+</body>
+</html>
